@@ -34,7 +34,10 @@ const answer = (result) => {
   const now = time();
   for (let i = 0; i < talkDate.length; i++) {
     if (String(result).includes(talkDate[i].user)) {
-      return `<span class="showText">${talkDate[i].bot}</span>`;
+      return (
+        `<span class="showText">${talkDate[i].bot}</span>
+        <span class="time">${now}</span>`
+    );
     }
   }
   return (
