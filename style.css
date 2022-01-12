@@ -1,8 +1,8 @@
 body {
-  background: rgb(220, 255, 224);
+  background: rgb(180, 255, 189);
 }
 .container {
-  width: 90vw;
+  width: 95vw;
   height: 95vh;
   margin: auto;
   display: flex;
@@ -15,11 +15,10 @@ body {
   flex-direction: row;
 }
 .photo {
-  flex: 0.15;
-  margin: 1.5vw;
+  flex: 0.2;
 }
 .photo img {
-  width: 10vw;
+  width: 15vw;
   border-radius: 40%;
 }
 .botName {
@@ -34,10 +33,32 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+#info {
+  flex: 0.1;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: gray;
+}
+#infoMsg{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px dotted black;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5vw;
+  border-radius: 10px;
+  background: rgb(180, 255, 189);
+}
 /* Middle */
 #contents {
   flex: 0.8;
-  overflow: auto;
+  height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse;
 }
 #contents .userMsg {
   text-align: right;
@@ -51,6 +72,9 @@ body {
   background-size: 100%;
   border-radius: 5px;
   padding: 1.5vw;
+}
+#talk {
+  padding-bottom: 2vh;
 }
 /* Bottom */
 .userInput {

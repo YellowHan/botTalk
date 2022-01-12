@@ -2,6 +2,7 @@ const btn = document.getElementById("btn");
 const userText = document.getElementById("userText");
 
 document.getElementById("botName").innerText = "꿀꿀";
+document.getElementById("info").innerText = "?";
 
 document.addEventListener("click", (event) => {
   const target = event.target;
@@ -10,8 +11,14 @@ document.addEventListener("click", (event) => {
     userText.value = "";
     btn.style.background = "rgb(240, 240, 240)";
     btn.style.color = "gray";
-    document.getElementById("contents").innerHTML += send(result);
-    document.getElementById("contents").innerHTML += answer(result);
+    document.getElementById("talk").innerHTML += send(result);
+    document.getElementById("talk").innerHTML += answer(result);
+  }
+  if(target.id == "info") {
+    document.getElementById("info").innerHTML = '<p id="infoMsg"><b>키워드</b><br/>안녕 / 이름 / 나이<br/>돼지 / 바보 / 꿀꿀<br/>나 어떻게 생각해<br/>나한테 궁금한<br/>웃어 / 울어</p>';
+  }
+  else {
+    document.getElementById("info").innerHTML = "?";
   }
 });
 
