@@ -27,7 +27,7 @@ body {
   position: relative;
 }
 #botName {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: gray;
   margin: 0px;
   position: absolute;
@@ -35,9 +35,22 @@ body {
   transform: translateY(-50%);
 }
 /* Middle */
-.contents {
+#contents {
   flex: 0.8;
   overflow: auto;
+}
+#contents .userMsg {
+  text-align: right;
+  padding: 1vw;
+}
+.time {
+  font-size: 10px;
+}
+.showText {
+  background: yellow;
+  background-size: 100%;
+  border-radius: 5px;
+  padding: 1.5vw;
 }
 /* Bottom */
 .userInput {
