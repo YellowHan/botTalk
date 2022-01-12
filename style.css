@@ -1,0 +1,65 @@
+body {
+  background: rgb(220, 255, 224);
+}
+.container {
+  width: 90vw;
+  height: 95vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+/* Top */
+.top {
+  flex: 0.1;
+  display: flex;
+  flex-direction: row;
+}
+.photo {
+  flex: 0.15;
+  margin: 1.5vw;
+}
+.photo img {
+  width: 10vw;
+  border-radius: 40%;
+}
+.botName {
+  flex: 0.8;
+  position: relative;
+}
+#botName {
+  font-size: 1.2rem;
+  color: gray;
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* Middle */
+.contents {
+  flex: 0.8;
+  overflow: auto;
+}
+/* Bottom */
+.userInput {
+  flex: 0.2;
+  background: white;
+  display: flex;
+}
+#userText {
+  flex: 0.9;
+  border: none;
+  padding: 2vw;
+  resize: none;
+}
+#userText:focus {
+  outline: none;
+}
+#btn {
+  flex: 0.1;
+  width: 0.5vw;
+  height: 5vh;
+  margin-top: 2vh;
+  color: gray;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 4px;
+}
